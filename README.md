@@ -1,10 +1,14 @@
 # HiveBox
 
-An end-to-end platform project from the [Dynamic DevOps Roadmap](https://devopsroadmap.io/).
+An end-to-end platform project built following the [Dynamic DevOps Roadmap](https://devopsroadmap.io/projects/hivebox/).
 HiveBox tracks environment sensor data from [openSenseMap](https://opensensemap.org/).
 
 The focus is the platform: containers, CI/CD, Kubernetes, Terraform, and observability.
 The app code stays small on purpose.
+
+<p align="center">
+  <img src="https://devopsroadmap.io/img/hivebox-architecture.gif" width="60%" />
+</p>
 
 ## Status
 
