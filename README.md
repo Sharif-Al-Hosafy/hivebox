@@ -14,11 +14,33 @@ The app code stays small on purpose.
 
 | Phase | Topic | Status |
 |---|---|---|
-| 1–2 | Kickoff, basics | planned |
+| 1–2 | Kickoff, basics | done |
 | 3 | Start: app, Docker, CI | planned |
 | 4 | Kubernetes, CD | planned |
 | 5 | Terraform, Helm, cache, E2E | planned |
 | 6 | GitOps | planned |
+
+## Run locally
+
+Requires Docker. The version lives in `version.txt` ([Semantic Versioning](https://semver.org/)).
+
+Build the image, tagged with the current version:
+
+```bash
+docker build -t hivebox:$(cat version.txt) .
+```
+
+Run it:
+
+```bash
+docker run --rm hivebox:$(cat version.txt)
+```
+
+Expected output (the app prints its version and exits with code 0):
+
+```
+v0.0.1
+```
 
 ## Layout
 
